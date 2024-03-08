@@ -8,8 +8,8 @@
 }
 
 body {
- font-family: 'inter';
- background: #262626;
+  font-family: 'inter';
+  background: #262626;
 }
 
 h1 {
@@ -86,8 +86,12 @@ h1 a {
 
 /* Main Section */
 
-img {
-  margin: auto 12px;
+.t-shirt {
+  width: 100%;
+}
+
+#main-section {
+  padding: 30px 0;
 }
 
 #main-section #flex {
@@ -95,19 +99,16 @@ img {
   flex-wrap: wrap;
   max-width: 950px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 #main-section .main-container {
   background-color: #343434;
   color: #fff;
-  width: 220px;
-  height: 325px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  width: calc(25% - 30px);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-  margin: 15px;
+  margin: 15px 0;
+  padding: 12px;
 }
 
 #flex .profile:hover {
@@ -131,17 +132,15 @@ img {
   font-weight: lighter;
 }
 .main-container .all-price  {
-  display: inline-block;
-  font-size: 32px;
-}
-.main-container .price {
   float: right;
-  margin-left: 63px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 5px;
 }
 
 /* Footer */
 .hr-ruler {
-border: #343434 1px solid; 
+  border: #343434 1px solid; 
 }
 #footer {
   text-align: center;
